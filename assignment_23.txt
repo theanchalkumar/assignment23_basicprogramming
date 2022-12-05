@@ -1,0 +1,48 @@
+1.
+
+def is_symmetrical_num(n):
+  return str(n) == str(n)[::-1]
+print(is_symmetrical_num(121))
+print(is_symmetrical_num(0))
+print(is_symmetrical_num(122))
+print(is_symmetrical_num(990099))
+
+2.
+
+a, b = [int(x) for x in input("Enter two values\n").split(', ')]
+print("\nThe value of a is {} and b is {}".format(a, b))
+  
+# Taking 3 inputs
+a, b, c = [int(x) for x in input("Enter three values\n").split(', ')]
+print("\nThe value of a is {}, b is {} and c is {}".format(a, b, c))
+  
+# Taking multiple inputs
+L = [int(x) for x in input("Enter multiple values\n").split(', ')]
+print("\nThe values of input are", L) 
+
+3.
+
+def sq(num):
+words = num.split()  # split the text
+for word in words:  # for each word in the line:
+    print(word**2) # print the word
+
+4.
+
+l = [1, 2, 4, 2, 1, 4, 5]
+print("Original List: ", l)
+res = [*set(l)]
+print("List after removing duplicate elements: ", res)
+
+5.
+
+def media(x):
+  if x == 0:
+    return 0
+  else:
+    digits = []
+    while x > 0:
+      digits.append(x % 10)
+      x = x // 10
+    return sum(digits) / len(digits)
+
